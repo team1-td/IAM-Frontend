@@ -14,8 +14,8 @@
     <meta property="og:site_name" content="image recognizer">
     <meta property="og:description" content="A webapp where you can upload up to 10 image per time and get a basic description for each one.">
     <meta property="og:locale" content="English">
-    <meta property="og:url" content="https://iam-webapp.herokuapp.com/">
-    <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+    <meta property="og:url" content="">
+    <link href="assets/css/style.css" rel="stylesheet">
     <!--CARICAMENTO GOOGLE FONTS POPPINS E PERMANENTMARKER-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -29,15 +29,17 @@
 <body>
     <!--CARICAMENTO LOGO-->
     <div class="logo">
-        <img src="{{ url_for('static', filename='assets/images/logo.png') }}" alt="logo">
+        <img src="./assets/img/logo.png" alt="logo">
     </div>
     <!--CARICAMENTO TESTO NOME APP IAM-->
     <div class="app_name">
         <p class="appname"> I AM </p>
     </div>
+    <div> login:  <span id="login"></span> </div>
+	<div> created_at:  <span id="created_at"></span> </div>
     <!--FORM DI INSERIMENTO USERNAME E PASSWORD-->
     <div class="data_insert">
-        <form action="{{ url_for('home') }}" method="POST">
+        <form action="" method="POST">
             <p class="position__modifier">
                 <label for="username">Username</label><br>
                 <input type="text" id="username" name="username" class="inputfield_style">
@@ -54,7 +56,7 @@
     </div>
 
     <!-- CREDITS -->
-    <div class="credits">CREDITS</div>
+    <!-- <div class="credits">CREDITS</div>
     <div class="credits__background">
         <img id="close__credits" src="/static/assets/images/close__credits.svg" alt="">
         <div class="credits__container">
@@ -90,8 +92,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script src="{{ url_for('static', filename='assets/JS/app.js') }}"></script>
+    </div> -->
+
+    
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/api.js"></script>
 
     <!--BOTTONI PER LA SECONDA PAGINA
     <button class="btn btn__add__image">Add image</button>

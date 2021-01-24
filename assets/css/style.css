@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 
-body > * {
+form > * {
     text-align: left;
 }
 
@@ -29,10 +29,25 @@ body > * {
     outline: 0;
 }
 
+nav{
+    text-align: right;
+    display: block;
+    margin: 1rem;
+}
+
+nav i{
+    color: #464342;
+    font-size: 2rem;
+}
+
+nav .app_name{
+    float: left;
+    color: #464342;
+}
 /* logo e app-name */
 
 .logo {
-    margin-top: 15vh;
+    margin-top: 10vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -90,106 +105,19 @@ input[type="password"] {
     color: #464342;
 }
 
+/* pagina credits */
+
+.gitlink i{
+    color: #464342;
+    font-size: 1.5rem;
+}
 
 /* media query */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
 
 }
 
 @media screen and (min-width: 768px) {
  
-}
-
-
-/* ---- */
-/*da qui in poi stili per la sezione CREDITS*/
-
-.credits {
-    text-align: center;
-    margin-top: 8vh;
-    text-decoration: underline;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.credits__background {
-    background-color: rgba(26, 34, 50, 0.97);
-    border-radius: 8%;
-    position: absolute;
-    top: 27%;
-    display: none;
-}
-
-.credits__container {
-    height: 60vh;
-    display: flex;
-    justify-content: space-between;
-    font-size: 10px;
-    margin-top: 10px;
-    margin-left: 8%;
-    /*display: none;*/
-}
-
-.credits__list div {
-    position: relative;
-    margin-top: 26px;
-    font-size: 12px;
-    width: 60%;
-}
-
-.credits__list span {
-    font-size: 8px;
-}
-
-.git__link {
-    font-size: 8px;
-    color: #ffffff;
-    width: 35%;
-}
-
-.credits__list__modifier {
-    margin-left: 12%;
-}
-
-#close__credits {
-    position: absolute;
-    margin-left: 90%;
-    margin-top: -10%;
-    width: 30px;
-    cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
-    .credits__list {
-        margin-left: 14%;
-    }
-    .credits__container {
-        width: 38vw;
-        font-size: 20px;
-        margin: auto;
-        margin-top: 40px;
-    }
-    .credits__background {
-        margin-left: 30%;
-    }
-    .credits {
-        font-size: 18px;
-    }
-    .credits__list div {
-        font-size: 18px;
-        width: 90%;
-        margin-top: 40px;
-    }
-    .credits__list span {
-        font-size: 10px;
-    }
-    .git__link {
-        font-size: 12px;
-        width: 100%;
-    }
-    #close__credits {
-        margin-top: -5%;
-        width: 40px;
-    }
 }

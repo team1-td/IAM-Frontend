@@ -6,6 +6,7 @@ This is a project, inserted in our study path, made to learn teamworking and Agi
 "Iam-webapp" is an image recognizer that, after a first login phase, permit the upload of a maximum of 10 images per time, getting a basic description of each one. The app is responsive and is thought to work on each Mobile (IOS and Android) and Desktop devices. Other implementations on the app are planned.
 
 [Link Figma](https://www.figma.com/file/reIDfYOFzs9WdBIVKdGDXd/ui-team1)
+
 [Link deploy](https://pedantic-newton-615678.netlify.app/)
 # Build with
 For the front-end side: HTML, CSS and JavaScript.

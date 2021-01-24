@@ -15,29 +15,36 @@
     <meta property="og:description" content="A webapp where you can upload up to 10 image per time and get a basic description for each one.">
     <meta property="og:locale" content="English">
     <meta property="og:url" content="">
-    <link href="assets/css/style.css" rel="stylesheet">
+
     <!--CARICAMENTO GOOGLE FONTS POPPINS E PERMANENTMARKER-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <!-- <link href="/static/assets/css/style.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="assets/css/style.css" rel="stylesheet">
     <title>Iam</title>
 </head>
 
 <body>
-    <!--CARICAMENTO LOGO-->
+    <nav>
+        <a href="credits.html" alt="link to credits page">
+            <i class="fas fa-ellipsis-v"></i>
+        </a>
+    </nav>
+    <!-- logo e nome app -->
     <div class="logo">
         <img src="./assets/img/logo.png" alt="logo">
     </div>
-    <!--CARICAMENTO TESTO NOME APP IAM-->
     <div class="app_name">
-        <p class="appname"> I AM </p>
+        <span class="appname"> I AM </span>
     </div>
-    <div> login:  <span id="login"></span> </div>
-	<div> created_at:  <span id="created_at"></span> </div>
-    <!--FORM DI INSERIMENTO USERNAME E PASSWORD-->
+    
+    <!-- deccommentare per test api -->
+    <!-- <div> login:  <span id="login"></span> </div>
+    <div> created_at:  <span id="created_at"></span> </div> -->
+    
+    <!-- form inserimento username e password utente -->
     <div class="data_insert">
         <form action="" method="POST">
             <p class="position__modifier">

@@ -1,0 +1,123 @@
+/* principali */
+body {
+    background-color: #F1F1F1;
+    color: #464342;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+form > * {
+    text-align: left;
+}
+
+.btn {
+    text-align: center;
+    width: 15rem;
+    height: 2.5rem;
+    background-color: #065B83;
+    border-radius: 30px;
+    font-family: "Poppins";
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    color: #ffffff;
+    margin: 56px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+nav{
+    text-align: right;
+    display: block;
+    margin: 1rem;
+}
+
+nav i{
+    color: #464342;
+    font-size: 2rem;
+}
+
+nav .app_name{
+    float: left;
+    color: #464342;
+}
+/* logo e app-name */
+
+.logo {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.logo img {
+    width: 6rem;
+    height: auto;
+}
+
+.app_name {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* input */
+.inputfield_style {
+    border: 1px solid #BDBDBD;
+    color: #464342;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    height: 34px;
+    margin-top: 10px;
+    padding: 0 5px;
+    width: 260px;
+}
+
+input[type="password"] {
+    font: small-caption;
+    font-size: 30px;
+}
+
+.data_insert {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.position__modifier {
+    margin-left: 12%;
+}
+
+/* icona occhio input text*/
+.data_insert i {
+    float: right;
+    margin-left: -25px;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 2;
+    color: #464342;
+}
+
+/* pagina credits */
+
+.gitlink i{
+    color: #464342;
+    font-size: 1.5rem;
+}
+
+/* media query */
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) {
+ 
+}

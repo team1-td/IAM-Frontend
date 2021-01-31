@@ -1,9 +1,9 @@
-function matchPassword() {
-    let password = document.getElementById("registragion__password");
-    var passwordConfirm = document.getElementById("registragion__confirm__password");
-    if (password.value != passwordConfirm.value) {
-        alert("Le password non corrispondono, riprova");
+function onChange() {
+    const password = document.querySelector('input[name=password]');
+    const confirm = document.querySelector('input[name=confirm]');
+    if (confirm.value === password.value) {
+        confirm.setCustomValidity('');
     } else {
-        alert("Password creata con successo");
+        confirm.setCustomValidity('Le password non corrispondono. Riprova');
     }
 }

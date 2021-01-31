@@ -78,7 +78,7 @@ nav .app_name{
     width: 260px;
 }
 
-input[type="password"] {
+#password {
     font: small-caption;
     font-size: 30px;
 }
@@ -112,6 +112,58 @@ input[type="password"] {
     font-size: 1.5rem;
 }
 
+
+/*sign up button*/
+.sign__up__button {
+    text-align: center;
+}
+
+/*registration page*/
+.header {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+}
+.profile__button {
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+.profile__button:hover {
+    cursor: pointer;
+}
+.sign__up {
+    margin-top: 5vh;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    font-size: 18px;
+    color: #464342;
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.registration__inputfield {
+    border: none;
+    margin-top: 25px;
+}
+.registration__inputfield::placeholder {
+    padding-left: 17px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #464342;
+}
+
 /* media query */
 
 @media screen and (max-width: 767px) {
@@ -119,5 +171,7 @@ input[type="password"] {
 }
 
 @media screen and (min-width: 768px) {
- 
+    .header {
+        width: 30%;     
+    }
 }

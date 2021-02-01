@@ -1,78 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Team 1: Abdu Mohammed Nur; Bernabei Diana; Boanini Sara; di Fede Stefan; Improda Marco; Muzzi Lorenzo; Spagnolini Alessio; Vitelli Nicolò">
-    <meta name="copyright" content="Team 1">
-    <meta name="description" content="Upload up to 10 image per time and get a basic description for each one.">
-    <meta name="keywords" content="I am, image, upload, recognition, jpeg, png">
-    <meta property="og:type" content="Landing Page">
-    <meta property="og:title" content="IAm-webapp">
-    <meta property="og:site_name" content="image recognizer">
-    <meta property="og:description" content="A webapp where you can upload up to 10 image per time and get a basic description for each one.">
-    <meta property="og:locale" content="English">
-    <meta property="og:url" content="">
-
-    <!--CARICAMENTO GOOGLE FONTS POPPINS E PERMANENTMARKER-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <title>Iam</title>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Team 1: Abdu Mohammed Nur; Bernabei Diana; Boanini Sara; di Fede Stefan; Improda Marco; Muzzi Lorenzo; Spagnolini Alessio; Vitelli Nicolò">
+        <meta name="copyright" content="Team 1">
+        <meta name="description" content="Upload up to 10 image per time and get a basic description for each one.">
+        <meta name="keywords" content="I am, image, upload, recognition, jpeg, png">
+        <meta property="og:type" content="Landing Page">
+        <meta property="og:title" content="IAm-webapp">
+        <meta property="og:site_name" content="image recognizer">
+        <meta property="og:description" content="A webapp where you can upload up to 10 image per time and get a basic description for each one.">
+        <meta property="og:locale" content="English">
+        <meta property="og:url" content="">
+    
+        <!--CARICAMENTO GOOGLE FONTS POPPINS E PERMANENTMARKER-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <title>Iam</title>
+    </head>
 <body>
     <div class="header">
-        <div class="app_name">
-            <span class="appname"> I AM </span>
-        </div>
+        <a href="index.html"><span class="app_name"> I AM </span></a>
         <button class="profile__button"><img src="/assets/img/profile__button.svg" alt=""></button>
     </div>
 
-    <div class="sign__up">Sign Up</div>
+    <h1>Sign Up</h1>
 
-
+ 
     <form class="registration__form" action="" method="POST">
         <div>
             <label for="registration__username"></label>
-            <input type="text" id="registragion__username" class="inputfield_style registration__inputfield" placeholder="Username">
+            <input type="text" id="registragion__username" class="datainsert__style registration__inputfield" placeholder="Username">
         </div>
-
+        
         <div>
             <label for="registration__email"></label>
-            <input type="email" id="registragion__email" class="inputfield_style registration__inputfield" placeholder="Email">
+            <input type="email" id="registragion__email" class="datainsert__style registration__inputfield" placeholder="Email">
         </div>
-
+        
         <div>
             <label for="registration__name"></label>
-            <input type="text" id="registragion__name" class="inputfield_style registration__inputfield" placeholder="Name">
+            <input type="text" id="registragion__name" class="datainsert__style registration__inputfield" placeholder="Name">
         </div>
-
+        
         <div>
             <label for="registration__surname"></label>
-            <input type="text" id="registragion__surname" class="inputfield_style registration__inputfield" placeholder="Surname">
+            <input type="text" id="registragion__surname" class="datainsert__style registration__inputfield" placeholder="Surname">
         </div>
-
+        
         <div>
             <label for="registration__password"></label>
-            <input type="password" name="password" id="registragion__password" class="inputfield_style registration__inputfield" placeholder="Password" onChange="onChange()">
+            <input type="password" id="registragion__password" class="datainsert__style registration__inputfield" placeholder="Password">
         </div>
-
+        
         <div>
-            <label for="registration__confierm__password"></label>
-            <input type="password" name="confirm" id="registragion__confirm__password" class="inputfield_style registration__inputfield" placeholder="Confirm Password" onChange="onChange()">
+            <label for="registration__confirm-password"></label>
+            <input type="password" id="registration__confirm__password" class="datainsert__style registration__inputfield" placeholder="Confirm Password">
         </div>
         <p>
             <input type="submit" class="btn" alt="button to sign up" value="SIGN UP">
         </p>
     </form>
-
-    <script src="assets/js/register.js "></script>
 </body>
-
 </html>

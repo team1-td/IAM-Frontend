@@ -113,18 +113,17 @@ nav .app_name{
 }
 
 
-/*sign up button*/
-.sign__up__button {
+/*registration button*/
+.registration__button {
     text-align: center;
 }
 
 /*registration page*/
 .header {
     margin: auto;
-    width: 80%;
     display: flex;
     justify-content: space-between;
-    margin-top: 34px;
+   
 }
 .profile__button {
     width: fit-content;
@@ -136,13 +135,6 @@ nav .app_name{
 .profile__button:hover {
     cursor: pointer;
 }
-.sign__up {
-    margin-top: 5vh;
-    font-family: 'Poppins';
-    font-weight: bolder;
-    font-size: 18px;
-    color: #464342;
-}
 
 .registration__form {
     display: flex;
@@ -152,11 +144,9 @@ nav .app_name{
 }
 
 .registration__inputfield {
-    border: none;
     margin-top: 25px;
 }
 .registration__inputfield::placeholder {
-    padding-left: 17px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: normal;
@@ -171,7 +161,5 @@ nav .app_name{
 }
 
 @media screen and (min-width: 768px) {
-    .header {
-        width: 30%;     
-    }
+
 }

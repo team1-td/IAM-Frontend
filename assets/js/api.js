@@ -1,4 +1,6 @@
-fetch("https://iamimageapp.herokuapp.com/login").then(response => {
+fetch("https://iamimageapp.herokuapp.com/login",{
+   mode: 'cors'
+}).then(response => {
     if (response.ok) {
       console.log("Contenuto ricevuto");
 
@@ -18,7 +20,8 @@ fetch("https://iamimageapp.herokuapp.com/login").then(response => {
     }
 
  }).then(utente => {
-    document.getElementById("login").innerHTML = utente.login,
-    document.getElementById("created_at").innerHTML = utente.created_at
+   console.log(utente);
+   //  document.getElementById("login").innerHTML = utente.login,
+   //  document.getElementById("created_at").innerHTML = utente.created_at
  }).catch(error => console.log("Si è verificato un errore!"))
 

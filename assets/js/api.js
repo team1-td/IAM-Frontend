@@ -1,6 +1,4 @@
-fetch("https://iamimageapp.herokuapp.com/login",{
-   mode: 'cors'
-}).then(response => {
+fetch("https://api.github.com/users/amnur").then(response => {
     if (response.ok) {
       console.log("Contenuto ricevuto");
 
@@ -20,8 +18,13 @@ fetch("https://iamimageapp.herokuapp.com/login",{
     }
 
  }).then(utente => {
-   console.log(utente);
-   //  document.getElementById("login").innerHTML = utente.login,
-   //  document.getElementById("created_at").innerHTML = utente.created_at
+    document.getElementById("login").innerHTML = utente.login,
+    document.getElementById("created_at").innerHTML = utente.created_at
  }).catch(error => console.log("Si è verificato un errore!"))
 
+
+
+//  fetch("https://iamimageapp.herokuapp.com/login",{
+//    mode: 'cors'
+// }).then(response => {
+   

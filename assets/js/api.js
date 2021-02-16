@@ -1,4 +1,4 @@
-fetch("https://api.github.com/users/amnur").then(response => {
+fetch("https://iamimageapp.herokuapp.com/login").then(response => {
     if (response.ok) {
       console.log("Contenuto ricevuto");
 

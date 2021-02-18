@@ -160,6 +160,7 @@ form i {
     padding: 20px;
     text-align: center;
     color: #464342;
+    cursor: pointer;
   }
   
   #drop-area.highlight {

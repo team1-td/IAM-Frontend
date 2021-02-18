@@ -1,9 +1,9 @@
 const dropArea = document.getElementById("drop-area");
-var btnProcess = document.getElementById("process");
+var btnProcess = document.getElementById("btnProcess");
 
 // funzione principale richiamata quando si caricano file nell'area drag&drop
 const handleFiles = files => {
-btnProcess.style="display:inline";
+  btnProcess.style="display:inline";
   // dichiaro l'array dei file di dimensione il numero di files (sintassi es6)
   const filesArray = [...files];
   // per ogni file dell'array eseguo le funzioni di caricamento e anteprima

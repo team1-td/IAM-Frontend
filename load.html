@@ -33,28 +33,20 @@
         </nav>
 
         <section>
-            <div id="drop-area">
-              <form class="loadForm" enctype="multipart/form-data">
-                <p>
-                    Drag file here or click on the button above 
-                  </p>
+            <form class="loadForm" enctype="multipart/form-data">
                 <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
-                
-                <label for="fileElem" class="btn">
-                  Select some files
+                <label id="drop-area" for="fileElem"> 
+                    <p>
+                        Drag and drop your file here or click here to upload.
+                    </p>
+                    <div id="gallery"></div>
+                </label>
+                <input type="submit" alt="process all the images uploaded" id="process" hidden>
+                <label for="process" class="btn" id="btnProcess" hidden>
+                    PROCESS
                 </label> 
-                
-                <div id="gallery"></div>
-                
-                <input type="submit" name="submit" hidden>
-                
-                <label for="submit" class="btn" id="process" hidden>
-                  PROCESS
-                </label> 
-              </form>
-            </div>
+            </form>
             <p id="formError"></p>
-           
           </section>
     </body>
     <script src="/assets/js/drag&drop.js"></script>

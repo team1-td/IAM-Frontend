@@ -1,4 +1,4 @@
-fetch("https://api.github.com/users/amnur").then(response => {
+fetch("https://iamimageapp.herokuapp.com/register").then(response => {
     if (response.ok) {
    
       console.log("Contenuto ricevuto");
@@ -23,3 +23,9 @@ fetch("https://api.github.com/users/amnur").then(response => {
     document.getElementById("created_at").innerHTML = utente.created_at
  }).catch(error => console.log("Si è verificato un errore!"))
 
+
+
+//  fetch("https://iamimageapp.herokuapp.com/login",{
+//    mode: 'cors'
+// }).then(response => {
+   

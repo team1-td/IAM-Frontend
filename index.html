@@ -22,7 +22,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link href="assets/css/style.css" rel="stylesheet">
-        <title>Iam WebApp</title>
+
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+        
+        <title>IAM Image Recognition</title>
     </head>
 
     <body>
@@ -35,11 +41,11 @@
             <img src="./assets/img/logo.png" alt="logo">
         </div>
         <div class="app_name">
-            <span class="appname"> I AM </span>
+            <span class="appname">I AM</span>
         </div>
 
         <div>
-            <form action="" method="POST" >
+            <form action="./load.html">
                 <div>
                     <label for="username">Username</label><br>
                     <input type="text" id="username" name="username">
@@ -50,13 +56,11 @@
                     <input type="password" id="password" name="password">
                     <i class="far fa-eye" id="togglePassword"></i>
                 </div>
-                <div>
-                    <input type="submit" class="inputBtn" alt="button to go on load page" id="login" hidden>
-                    <div class="btn">
-                        <a href="/load.html" for="login">LOGIN</a>
-                    </div>
-                    <p class="center">Don’t have an account? <a href="registration.html" class="signup">Sign up</a></p>
-                </div>
+                <input type="submit" alt="button to go on load page" id="login" hidden>        
+                <label for="login" class="btn">
+                    LOGIN
+                </label> 
+                <p class="center">Don’t have an account? <a href="./registration.html" class="signup">Sign up</a></p>
             </form>
         </div>
         <script src="./assets/js/app.js"></script>

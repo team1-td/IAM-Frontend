@@ -27,7 +27,7 @@
         <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-        
+
         <title>IAM Image Recognition</title>
     </head>
 
@@ -35,43 +35,25 @@
         <nav>
             <a href="index.html" class="left"><i class="fas fa-arrow-left" ></i></a>
             <a href="index.html"><span class="app_name"> I AM </span></a> 
+            <a href="profile.html"><i class="fas fa-user right"></i></a> 
         </nav>
 
-        <h1>Credits</h1>
-
-        <div>
-            <div>
-                <h3>Team Front-End</h3>
-                <p>
-                    Bernabei Diana 
-                    <a class="gitlink" href="https://github.com/dianaberna"><i class="fab fa-github"></i></a>
-                </p>
-                <p>
-                    Di Fede Stefan 
-                    <a class="gitlink" href="https://github.com/stefandhub"><i class="fab fa-github"></i></a>
-                </p>
-                <p>
-                    Improda Marco 
-                    <a class="gitlink" href="https://github.com/marcoimproda"><i class="fab fa-github"></i></a>
-                </p>
-                <p>
-                    Spagnolini Alessio 
-                    <a class="gitlink" href="https://github.com/Ishtraodd"><i class="fab fa-github"></i></a>
-                </p>
-            </div>
-            
-            <div>
-                <h3>Team Back-End</h3>
-                <p>
-                    Abdu Mohammed Nur 
-                    <a class="gitlink" href="https://github.com/amnur"><i class="fab fa-github"></i>
-                    </a>
-                <p>
-                    Vitelli Nicolò 
-                    <a class="gitlink" href="https://github.com/nicolovitelli"><i class="fab fa-github"></i></a>
-                </p>
-            </div>
-        </div>
+        <section>
+            <form class="loadForm" enctype="multipart/form-data">
+                <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                <label id="drop-area" for="fileElem"> 
+                    <p>
+                        Drag and drop your file here or click here to upload.
+                    </p>
+                    <div id="gallery"></div>
+                </label>
+                <input type="submit" alt="process all the images uploaded" id="process" hidden>
+                <label for="process" class="btn" id="btnProcess" hidden>
+                    PROCESS
+                </label> 
+            </form>
+            <p id="formError"></p>
+          </section>
     </body>
-
+    <script src="/assets/js/drag&drop.js"></script>
 </html>

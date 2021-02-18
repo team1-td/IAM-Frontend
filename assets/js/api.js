@@ -1,7 +1,8 @@
 fetch("https://iamimageapp.herokuapp.com/register").then(response => {
     if (response.ok) {
+   
       console.log("Contenuto ricevuto");
-
+      console.log(response);
       return response.json();
     }
     if (response.status >= 100 && response.status < 200) {

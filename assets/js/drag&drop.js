@@ -1,7 +1,9 @@
 const dropArea = document.getElementById("drop-area");
+var btnProcess = document.getElementById("process");
 
 // funzione principale richiamata quando si caricano file nell'area drag&drop
 const handleFiles = files => {
+btnProcess.style="display:inline";
   // dichiaro l'array dei file di dimensione il numero di files (sintassi es6)
   const filesArray = [...files];
   // per ogni file dell'array eseguo le funzioni di caricamento e anteprima
@@ -43,11 +45,10 @@ const previewFile = file => {
     let img = document.createElement("img");
     img.src = reader.result;
     div.appendChild(img);
-    //document.getElementById("gallery").appendChild(img);
     let label = document.createElement("p");
-    label.innerHTML = file.name;
+    label.innerHTML = "recognition";
+    //label.innerHTML = file.name;
     div.appendChild(label);
-    //document.getElementById("gallery").appendChild(label);
     document.getElementById("gallery").appendChild(div);
   };
 };

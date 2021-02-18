@@ -1,4 +1,4 @@
-/* principali */
+/* main */
 body {
     background-color: #F1F1F1;
     color: #464342;
@@ -6,45 +6,24 @@ body {
     text-align: center;
 }
 
-form > * {
-    text-align: left;
-}
-
-.btn {
-    text-align: center;
-    width: 15rem;
-    height: 2.5rem;
-    background-color: #065B83;
-    border-radius: 30px;
-    font-family: "Poppins";
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: none;
-    color: #ffffff;
-    margin: 56px;
-    cursor: pointer;
-}
-
-.btn:focus {
-    outline: 0;
-}
-
+/* navigation topbar */
 nav{
-    text-align: right;
     display: block;
-    margin: 1rem;
-}
-
-nav i{
-    color: #464342;
-    font-size: 2rem;
-}
-
-nav .app_name{
-    float: left;
+    margin: 1.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
     color: #464342;
 }
-/* logo e app-name */
+
+    nav i{
+        color: #464342;
+        font-size: 2rem;
+    }
+
+    nav a{
+        color: #464342;
+        text-decoration: none;
+    }
 
 .logo {
     margin-top: 10vh;
@@ -54,10 +33,10 @@ nav .app_name{
     justify-content: center;
 }
 
-.logo img {
-    width: 6rem;
-    height: auto;
-}
+    .logo img {
+        width: 6rem;
+        height: auto;
+    }
 
 .app_name {
     font-family: 'Permanent Marker', cursive;
@@ -65,11 +44,65 @@ nav .app_name{
     text-align: center;
 }
 
-/* input */
-.datainsert__style {
+/* generic position */
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.center{
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* form */
+
+form > * {
+    text-align: left;
+}
+
+/* button */
+
+.btn{
+    text-align: center;
+    width: 15rem;
+    height: 2rem;
+    background-color: #065B83;
+    border-radius: 30px;
+    font-family: "Poppins";
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    color: #ffffff;
+    margin: 56px;
+    cursor: pointer;
+    padding: 10px 0;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.btn a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* form login and registration */
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+form input {
     border: 1px solid #BDBDBD;
     color: #464342;
-    font-family: 'Poppins', sans-serif;
     font-size: 1em;
     font-weight: 400;
     height: 34px;
@@ -78,25 +111,8 @@ nav .app_name{
     width: 260px;
 }
 
-#password {
-    font: small-caption;
-    font-size: 30px;
-}
-
-.datainsert {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-top: 10vh;
-}
-
-.position__modifier {
-    margin-left: 12%;
-}
-
-/* icona occhio input text*/
-.datainsert i {
+/* eye icon for password input */
+form i {
     float: right;
     margin-left: -25px;
     margin-top: 20px;
@@ -113,48 +129,17 @@ nav .app_name{
 }
 
 
-/*registration button*/
-.registration__button {
-    text-align: center;
+/* registration page */
+.signup{
+    text-decoration: none;
+    font-weight: bold;
+    color: #065B83;
 }
 
-/*registration page*/
-.header {
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-   
-}
-.profile__button {
-    width: fit-content;
-    height: fit-content;
-    border: none;
-    outline: none;
-    margin-top: 10px;
-}
-.profile__button:hover {
-    cursor: pointer;
+.registration__form div {
+    padding-bottom: 1rem;
 }
 
-.registration__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.registration__inputfield {
-    margin-top: 25px;
-}
-.registration__inputfield::placeholder {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    color: #464342;
-}
-
-/* media query */
 
 @media screen and (max-width: 767px) {
 
@@ -163,3 +148,4 @@ nav .app_name{
 @media screen and (min-width: 768px) {
 
 }
+

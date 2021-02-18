@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Team 1: Abdu Mohammed Nur; Bernabei Diana; Boanini Sara; di Fede Stefan; Improda Marco; Muzzi Lorenzo; Spagnolini Alessio; Vitelli Nicolò">
+        <meta name="author" content="Team 1: Abdu Mohammed Nur; Bernabei Diana; Di Fede Stefan; Improda Marco; Spagnolini Alessio; Vitelli Nicolò">
         <meta name="copyright" content="Team 1">
         <meta name="description" content="Upload up to 10 image per time and get a basic description for each one.">
         <meta name="keywords" content="I am, image, upload, recognition, jpeg, png">
@@ -15,57 +15,51 @@
         <meta property="og:locale" content="English">
         <meta property="og:url" content="">
     
-        <!--CARICAMENTO GOOGLE FONTS POPPINS E PERMANENTMARKER-->
+        <!-- laod font -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link href="assets/css/style.css" rel="stylesheet">
-        <title>Iam</title>
+        <title>Iam WebApp</title>
     </head>
 <body>
-    <div class="header">
-        <a href="index.html"><span class="app_name"> I AM </span></a>
-        <button class="profile__button"><img src="/assets/img/profile__button.svg" alt=""></button>
-    </div>
+    <nav>
+        <a href="index.html"><i class="fas fa-arrow-left left"></i></a>
+        <a href="index.html"><span class="app_name"> I AM </span></a> 
+        <a href="profile.html"><i class="fas fa-user right"></i></a> 
+    </nav>
 
     <h1>Sign Up</h1>
 
- 
     <form class="registration__form" action="" method="POST">
         <div>
-            <label for="registration__username"></label>
-            <input type="text" id="registragion__username" class="datainsert__style registration__inputfield" placeholder="Username">
+            <label for="registration__username">Username</label><br>
+            <input type="text" id="registragion__username">
         </div>
-        
         <div>
-            <label for="registration__email"></label>
-            <input type="email" id="registragion__email" class="datainsert__style registration__inputfield" placeholder="Email">
+            <label for="registration__email">Email</label><br>
+            <input type="email" id="registragion__email">
         </div>
-        
         <div>
-            <label for="registration__name"></label>
-            <input type="text" id="registragion__name" class="datainsert__style registration__inputfield" placeholder="Name">
+            <label for="registration__name">Name</label><br>
+            <input type="text" id="registragion__name">
         </div>
-        
         <div>
-            <label for="registration__surname"></label>
-            <input type="text" id="registragion__surname" class="datainsert__style registration__inputfield" placeholder="Surname">
+            <label for="registration__surname"></label>Surname<br>
+            <input type="text" id="registragion__surname">
         </div>
-        
         <div>
-            <label for="registration__password"></label>
-            <input type="password" id="registragion__password" class="datainsert__style registration__inputfield" placeholder="Password">
+            <label for="registration__password">Password</label><br>
+            <input type="password" id="registragion__password">
         </div>
-        
         <div>
-            <label for="registration__confirm-password"></label>
-            <input type="password" id="registration__confirm__password" class="datainsert__style registration__inputfield" placeholder="Confirm Password">
+            <label for="registration__confirm-password">Confirm password</label><br>
+            <input type="password" id="registration__confirm__password">
         </div>
-        <p>
-            <input type="submit" class="btn" alt="button to sign up" value="SIGN UP">
-        </p>
+        <input type="submit" class="btn" alt="button to sign up" id="signup" hidden>
+        <a class="btn" href="/registration.html" for="signup">SIGN UP</a>
     </form>
 </body>
 </html>

@@ -68,26 +68,27 @@ form > * {
 /* button */
 
 .btn{
-    text-align: center;
-    width: 15rem;
-    height: 2rem;
     background-color: #065B83;
+    border: none;
     border-radius: 30px;
+    color: #ffffff;
+    cursor: pointer;
     font-family: "Poppins";
     font-size: 1.1rem;
     font-weight: bold;
-    border: none;
-    color: #ffffff;
-    margin: 56px;
-    cursor: pointer;
+    height: 2rem;
+    margin: 2rem;
     padding: 10px 0;
+    text-align: center;
     text-decoration: none;
     vertical-align: middle;
+    width: 15rem; 
 }
 
 .btn a{
     color: #ffffff;
     text-decoration: none;
+    vertical-align: middle;
 }
 
 /* form login and registration */
@@ -121,15 +122,16 @@ form i {
     color: #464342;
 }
 
-/* pagina credits */
+/* pages styles*/
 
+/* credits */
 .gitlink i{
     color: #464342;
     font-size: 1.5rem;
 }
 
 
-/* registration page */
+/* registration  */
 .signup{
     text-decoration: none;
     font-weight: bold;
@@ -141,11 +143,67 @@ form i {
 }
 
 
-@media screen and (max-width: 767px) {
-
+/* load aka drag&drop zone */
+.loadForm{
+    margin: 0;
 }
 
-@media screen and (min-width: 768px) {
+.loadForm .btn{
+    margin: 1rem;
+}
 
+#drop-area {
+    border: 2px dashed #065B83;
+    border-radius: 10px;
+    width: 80vw;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: #464342;
+  }
+  
+  #drop-area.highlight {
+    border-color: red;
+  }
+    
+/* da gestire per rendere la griglia responsive */
+#gallery {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+    #gallery img {
+        width: 10rem;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+#fileElem {
+    display: none;
+}
+
+p#formError {
+    visibility: hidden;
+    background-color: #cc0000;
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    width: 80vw;
+    max-width: 480px;
+    margin: 1rem auto 0;
+}
+
+@media screen and (max-width: 767px) {
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+        #gallery img {
+            width: 6rem;
+        }
 }
 

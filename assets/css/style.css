@@ -193,10 +193,11 @@ p#formError {
     border-radius: 6px;
     color: #ffffff;
     text-align: center;
-    padding: 8px 0;
+    padding: 10px;
     width: 80vw;
     max-width: 480px;
     margin: 1rem auto 0;
+    border-radius: 30px;
 }
 
 @media screen and (max-width: 767px) {

@@ -1,14 +1,30 @@
 const dropArea = document.getElementById("drop-area");
 var btnProcess = document.getElementById("btnProcess");
+var countFiles;
+
+init();
+
+function init(){
+  countFiles=0;
+}
 
 // main function called when loading files in the drag & drop area
 const handleFiles = files => {
   btnProcess.style="display:inline";
   // declare the array of size files the number of files (syntax es6)
   const filesArray = [...files];
-  // for each file in the array I perform the loading and preview functions
-  filesArray.forEach(uploadFile);
-  filesArray.forEach(previewFile);
+  countFiles += filesArray.length
+  console.log(countFiles);
+  if(countFiles < 10){
+    // for each file in the array I perform the loading and preview functions
+    //filesArray.forEach(uploadFile);
+    filesArray.forEach(previewFile);
+  }else{
+    // print error for maximum file upload
+    let formError = document.getElementById("formError");
+    formError.innerHTML = "Sorry, you have reached the maximum number (maximum is 10) of images to process";
+    formError.style.visibility = "visible";
+  }
 };
 
 // function for loading the inserted files - TO BE SISTEMED

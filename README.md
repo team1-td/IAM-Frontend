@@ -18,14 +18,13 @@ To coordinate the team we perform daily standups and meetings using: Jitsi, Slac
 Layout realized with: Figma.
 
 # Getting started
-...
+The project does not need any particular frontend installation, I suggest you to look in the [backend repo](https://github.com/team1-td/IAM-Backend).
 # Roadmap
 See the [open issues](https://github.com/team1-td/IAM-Frontend/issues) for a list of proposed features (and known issues).
 # Members of the team
 ## Back-end
 * [Abdu Mohammed Nur](https://github.com/amnur) 
 * [Vitelli Nicolò](https://github.com/nicolovitelli)
-* [Muzzi Lorenzo]()
 ## Front-end 
 * [Bernabei Diana](https://github.com/dianaberna)
 * [Di Fede Stefan](https://github.com/stefandhub)

@@ -34,26 +34,25 @@
     <body>
         <nav>
             <a href="index.html" class="left"><i class="fas fa-arrow-left" ></i></a>
-            <a href="index.html"><span class="app_name"> I AM </span></a> 
-            <a href="profile.html"><i class="fas fa-user right"></i></a> 
+            <a href="profile.html"><i class="fas fa-user right"></i></a>
+            <a href="./history.html"><i class="fas fa-history right spaceRight"></i> </a> 
         </nav>
-
+        <h1>Images recognition</h1>
         <section>
             <form class="loadForm" enctype="multipart/form-data">
                 <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
                 <label id="drop-area" for="fileElem"> 
-                    <p>
-                        Drag and drop your file here or click here to upload.
-                    </p>
+                    <h3>Drag and drop your file here or click here to upload.</h3>
                     <div id="gallery"></div>
+                    <p id="formError"></p>
                 </label>
                 <input type="submit" alt="process all the images uploaded" id="process" hidden>
                 <label for="process" class="btn" id="btnProcess" hidden>
                     PROCESS
                 </label> 
             </form>
-            <p id="formError"></p>
+           
           </section>
     </body>
-    <script src="/assets/js/drag&drop.js"></script>
+    <script src="./assets/js/drag&drop.js"></script>
 </html>

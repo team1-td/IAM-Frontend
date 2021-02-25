@@ -145,6 +145,11 @@ form i {
     padding-bottom: 1rem;
 }
 
+/* profile page style */
+.profile__form div {
+    padding-bottom: 1rem;
+}
+
 
 /* load aka drag&drop zone */
 .loadForm{

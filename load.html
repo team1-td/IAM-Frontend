@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Team 1: Abdu Mohammed Nur; Bernabei Diana; Di Fede Stefan; Improda Marco; Spagnolini Alessio; Vitelli Nicolò">
+        <meta name="copyright" content="Team 1">
+        <meta name="description" content="Upload up to 10 image per time and get a basic description for each one.">
+        <meta name="keywords" content="I am, image, upload, recognition, jpeg, png">
+        <meta property="og:type" content="Landing Page">
+        <meta property="og:title" content="IAm-webapp">
+        <meta property="og:site_name" content="image recognizer">
+        <meta property="og:description" content="A webapp where you can upload up to 10 image per time and get a basic description for each one.">
+        <meta property="og:locale" content="English">
+        <meta property="og:url" content="">
+    
+        <!-- laod font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link href="assets/css/style.css" rel="stylesheet">
+        
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+
+        <title>IAM Image Recognition</title>
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html" class="left"><i class="fas fa-arrow-left" ></i></a>
+            <a href="profile.html"><i class="fas fa-user right"></i></a>
+            <a href="./history.html"><i class="fas fa-history right spaceRight"></i> </a> 
+        </nav>
+        <h1>Images recognition</h1>
+        <section>
+            <form class="loadForm" enctype="multipart/form-data">
+                <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                <label id="drop-area" for="fileElem"> 
+                    <h3>Drag and drop your file here or click here to upload.</h3>
+                    <div id="gallery"></div>
+                    <p id="formError"></p>
+                </label>
+                <input type="submit" alt="process all the images uploaded" id="process" hidden>
+                <label for="process" class="btn" id="btnProcess" hidden>
+                    PROCESS
+                </label> 
+            </form>
+           
+          </section>
+    </body>
+    <script src="./assets/js/drag&drop.js"></script>
+</html>

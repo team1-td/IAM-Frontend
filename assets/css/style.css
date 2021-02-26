@@ -1,0 +1,215 @@
+/* main */
+body {
+    background-color: #F1F1F1;
+    color: #464342;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* navigation topbar */
+nav{
+    display: block;
+    margin: 1.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: #464342;
+}
+
+    nav i{
+        color: #464342;
+        font-size: 2rem;
+    }
+    nav .spaceRight{
+        padding-right: 20px;
+    }
+
+    nav a{
+        color: #464342;
+        text-decoration: none;
+
+    }
+
+.logo {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+    .logo img {
+        width: 6rem;
+        height: auto;
+    }
+
+.app_name {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+}
+
+/* generic position */
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.center{
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* form */
+
+form > * {
+    text-align: left;
+}
+
+/* button */
+
+.btn{
+    background-color: #065B83;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 1.1rem;
+    font-weight: bold;
+    height: 2rem;
+    margin: 2rem;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 15rem; 
+}
+
+.btn a{
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+/* form login and registration */
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+form input {
+    border: 1px solid #BDBDBD;
+    color: #464342;
+    font-size: 1em;
+    font-weight: 400;
+    height: 34px;
+    margin-top: 10px;
+    padding: 0 5px;
+    width: 260px;
+}
+
+/* eye icon for password input */
+form i {
+    float: right;
+    margin-left: -25px;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 2;
+    color: #464342;
+}
+
+/* pages styles*/
+
+/* credits */
+.gitlink i{
+    color: #464342;
+    font-size: 1.5rem;
+}
+
+
+/* registration  */
+.signup{
+    text-decoration: none;
+    font-weight: bold;
+    color: #065B83;
+}
+
+.registration__form div {
+    padding-bottom: 1rem;
+}
+
+
+/* load aka drag&drop zone */
+.loadForm{
+    margin: 0;
+}
+
+.loadForm .btn{
+    margin: 1rem;
+}
+
+#drop-area {
+    border: 2px dashed #065B83;
+    color: #065B83;
+    border-radius: 30px;
+    width: 80vw;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  #drop-area h3{
+    font-weight: lighter;
+  }
+  
+  #drop-area.highlight {
+    border-color: #cc0000;
+  }
+    
+#gallery {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+    #gallery img {
+        width: 10rem;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+#fileElem {
+    display: none;
+}
+
+p#formError {
+    visibility: hidden;
+    background-color: #cc0000;
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    max-width: 480px;
+    margin: 1rem auto 0;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+        #gallery img {
+            width: 6rem;
+        }
+}
+

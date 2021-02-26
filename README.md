@@ -7,7 +7,7 @@ This is a project, inserted in our study path, made to learn teamworking and Agi
 
 [Link Figma](https://www.figma.com/file/reIDfYOFzs9WdBIVKdGDXd/ui-team1)
 
-[Link deploy](https://pedantic-newton-615678.netlify.app/)
+[Link deploy](https://iam-webapp.netlify.app/)
 # Build with
 For the front-end side: HTML, CSS and JavaScript.
 

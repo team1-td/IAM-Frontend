@@ -152,9 +152,11 @@ form i {
     padding-top: 5px;
 }
 
-/* .error-box-password {
-    height: 50px;
-} */
+.error-box-password {
+    height: 60px;
+    width: 400px;
+    text-align: center;
+}
 
 .input-error {
     border: solid 1px #ff0000;
@@ -170,6 +172,7 @@ form i {
 
 .btn__registration {
     height: 55px;
+    margin: 5px;
 }
 
 /* load aka drag&drop zone */

@@ -36,38 +36,38 @@
 
     <h1>Sign Up</h1>
 
-    <form class="registration__form" action="" method="POST">
+    <form class="registration__form" action="" method="POST" onsubmit="return formSubmit();">
         <div>
             <label for="registration__username">Username</label><br>
-            <input type="text" id="registragion__username">
+            <input type="text" id="registration__username">
         </div>
         <div class="error-box">
             <span id="error-text-username"></span>
         </div> 
         <div>
             <label for="registration__email">Email</label><br>
-            <input type="email" id="registragion__email">
+            <input type="email" id="registration__email">
         </div>
         <div class="error-box">
             <span id="error-text-email"></span>
         </div> 
         <div>
             <label for="registration__name">Name</label><br>
-            <input type="text" id="registragion__name">
+            <input type="text" id="registration__name">
         </div>
         <div class="error-box">
             <span id="error-text-name"></span>
         </div> 
         <div>
             <label for="registration__surname"></label>Surname<br>
-            <input type="text" id="registragion__surname">
+            <input type="text" id="registration__surname">
         </div>
         <div class="error-box">
             <span id="error-text-surname"></span>
         </div> 
         <div>
             <label for="registration__password">Password</label><br>
-            <input type="password" id="registragion__password">
+            <input type="password" id="registration__password">
         </div>
         <div class="error-box error-box-password">
             <span id="error-text-password"></span>
@@ -79,9 +79,9 @@
         <div class="error-box error-box-password">
             <span id="error-text-password"></span>
         </div>
-        <input type="submit" class="btn" alt="button to sign up" id="signup" hidden>
-        <a class="btn" href="/registration.html" for="signup">SIGN UP</a>
+        <input type="submit" class="btn btn__registration" alt="button to sign up" id="signup" value="LOGIN">
+        <!-- <a class="btn" href="/registration.html" for="signup">SIGN UP</a> -->
     </form>
-    <!-- <script src="./assets/js/validation_registration.js"></script> -->
+    <script src="./assets/js/validation_registration.js"></script>
 </body>
 </html>

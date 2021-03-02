@@ -168,6 +168,9 @@ form i {
     width: 260px;
 }
 
+.btn__registration {
+    height: 55px;
+}
 
 /* load aka drag&drop zone */
 .loadForm{

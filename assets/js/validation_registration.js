@@ -54,7 +54,7 @@ function formSubmit() {
         return false;
     }
     if (!isValidPassword(getConfirmPasswordElement())) {
-        errorMessage(getErrorTextPassword(), "Password requires minimum 8 characters, maximum 12 characaters, at least one uppercase character, one lowercase character, one number and one symbol");
+        errorMessage(getErrorTextConfirmPassword(), "Password requires minimum 8 characters, maximum 12 characaters, at least one uppercase character, one lowercase character, one number and one symbol");
         redBorber(getConfirmPasswordElement());
         return false;
     }

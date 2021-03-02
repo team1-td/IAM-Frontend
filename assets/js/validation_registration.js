@@ -26,7 +26,7 @@ function formSubmit() {
         return false;
     }
     if (isOneFieldEmpty(getConfirmPasswordElement())) {
-        errorMessage(getErrorTextConfirmPassword(), "Password is required");
+        errorMessage(getErrorTextConfirmPassword(), "Password confirmation is required");
         redBorber(getConfirmPasswordElement());
         return false;
     }
@@ -55,6 +55,12 @@ function formSubmit() {
     }
     if (!isValidPassword(getConfirmPasswordElement())) {
         errorMessage(getErrorTextConfirmPassword(), "Password requires minimum 8 characters, maximum 12 characaters, at least one uppercase character, one lowercase character, one number and one symbol");
+        redBorber(getConfirmPasswordElement());
+        return false;
+    }
+    if (!arePasswordsIdentical()) {
+        errorMessage(getErrorTextPassword(), "Passwords do not match");
+        errorMessage(getErrorTextConfirmPassword(), "Passwords do not match");
         redBorber(getConfirmPasswordElement());
         return false;
     }
@@ -197,4 +203,10 @@ function getErrorTextPassword() {
 
 function getErrorTextConfirmPassword() {
     return document.getElementById("error-text-confirm-password");
+}
+
+function arePasswordsIdentical() {
+    var password = document.querySelector('input[name=password]');
+    var confirm = document.querySelector('input[name=confirm]');
+    return confirm.value === password.value;
 }
